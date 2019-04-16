@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'text_output.dart';
+
 class TextControl extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -14,7 +16,7 @@ class _TextControlState extends State<TextControl> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text(_text),
+        TextOutput(_text),
         RaisedButton(
           child: Text('Change text'),
           onPressed: () {
